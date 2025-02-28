@@ -1,6 +1,6 @@
 // models/Order.js
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = new Sequelize('mysql://root:@localhost:3306/iptvdb');
+const sequelize = new Sequelize('mysql://hamza:1234@eurotvpro_database:3306/eurotvprodb');
 
 const Order = sequelize.define('Order', {
   firstName: {
