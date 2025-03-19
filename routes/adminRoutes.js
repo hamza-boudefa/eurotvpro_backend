@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router()
-const Order = require("../models/Order")
 const { Op } = require("sequelize")
+const { Order } = require("../models")
 
 // Route to get filtered and paginated orders (for admin)
 router.get("/orders", async (req, res) => {
