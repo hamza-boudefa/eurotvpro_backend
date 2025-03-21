@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: 'Plans', // Use the correct table name
+          model: 'plans', // Use the correct table name
           key: 'id',
         },
         onDelete: 'CASCADE',

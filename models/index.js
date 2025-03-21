@@ -6,7 +6,7 @@ const sequelize = new Sequelize(process.env.DB_NAME || 'iptvdb', process.env.DB_
   dialect: 'mysql',
   logging: false,
 });
-
+console.log(process.env.DB_NAME)
 // Import Models
 const Plan = require('./Plan')(sequelize, Sequelize);
 const PlanTranslation = require('./PlanTranslation')(sequelize, Sequelize);
