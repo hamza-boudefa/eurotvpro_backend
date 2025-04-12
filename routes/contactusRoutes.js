@@ -70,7 +70,7 @@ router.post('/submit', contactLimiter, validateContact, async (req, res) => {
   } catch (error) {
     console.error('Contact form error:', error);
     return res.status(500).json({ 
-      error: 'An error occurred while sending your message. Please try again later.' 
+      error: ' Please try again later.' 
     });
   }
 });
