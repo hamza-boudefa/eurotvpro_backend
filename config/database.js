@@ -1,13 +1,12 @@
-// const { Sequelize } = require('sequelize');
+const { Sequelize } = require('sequelize');
 
-// const sequelize = new Sequelize('eurotvprodb', 'hamza', '1234', {
-//   host: 'eurotvpro_database',
-//   dialect: 'mysql',
-//   logging: false, // Set to `console.log` if you want query logs
-// });
+const sequelize = new Sequelize('iptvdb', '', '', {
+  host: '127.0.0.1', // Ne pas utiliser 'localhost' ici
+  port: 3306,
+  dialect: 'mysql',
+  logging: false,
+});
 
-// sequelize.authenticate()
-//   .then(() => console.log('Database connected successfully.'))
-//   .catch((err) => console.error('Database connection failed:', err));
-
-// module.exports = sequelize;
+sequelize.authenticate()
+  .then(() => console.log('✅ Database connected successfully.'))
+  .catch((err) => console.error('❌ Database connection failed:', err));
